@@ -1,6 +1,7 @@
 /* Cambiar el fondo de toda la pantalla */
 html {
-    background-image:url(./images/Fondo/wallpaperbetter.com_1920x1080.jpg);
+    background-color: #023047;
+    /* background-image:url(./images/Fondo/wallpaperbetter.com_1920x1080.jpg); */
     background-size: 100% 100%; /*x ; y*/
     background-attachment: fixed; /* Para mantener fijo el fondo, sin esto se crashea cuando se usa 100% */
 }
