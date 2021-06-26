@@ -1,7 +1,12 @@
+*{
+    /* border: 1px rgb(55, 255, 82) solid; */
+    margin: 0;
+    padding: 0;
+}
+
 /* Cambiar el fondo de toda la pantalla */
 html {
     background-color: #023047;
-    /* background-image:url(./images/Fondo/wallpaperbetter.com_1920x1080.jpg); */
     background-size: 100% 100%; /*x ; y*/
     background-attachment: fixed; /* Para mantener fijo el fondo, sin esto se crashea cuando se usa 100% */
 }
@@ -12,6 +17,9 @@ main {
 }
 
 footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
     background-color: rgb(8, 104, 8);
     text-align: center;
     color: honeydew;
@@ -22,7 +30,6 @@ footer {
 }
 
 h1 {
-    border-radius: 20px 100px;
     text-align: center;
     color: #023047;
     font-size: 3.5rem;
@@ -30,38 +37,13 @@ h1 {
     font-weight: 1000;
     margin-bottom: 5%;
     background-color: #fffffc;
+    border-radius: 20px 100px;
     margin-left: 30%;
     width: 40%;
 }
 
 
-img {
-    margin-top: 2%;
-    margin-left: 15%;
-    margin-bottom: 2%;
-    width:65%;
-}
-
-section {
-    background-color: bisque;
-    width: auto;
-    margin-right: 10%;
-    border-left: 1rem solid black;
-}
-
-/* Titulo y link de los productos */
-figcaption {
-    margin-left: 38%;
-    padding-top: 2%;
-    font-family: 'Coustard';
-}
-
 /*Modificar los links*/
-li {
-    display: inline;
-}
-
-
 a {
     font-family: 'Coustard';
     font-size: 1.2rem;
@@ -76,27 +58,39 @@ a:visited {
 }
 
 a:hover {
-    border-bottom: 1px solid;
+    color: black;
     background-color: #fff;
+    padding: 0 20px;
 }
 
 /* Acomodar las clases */
+.flexito {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* border: 3px white solid; */
+
+}
+
 .mercado {
-    display: table-cell;
-    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    /* border: 2px green solid; */
+    /* margin: 40px; */
+    padding: 20px;
     background-color: burlywood;
 }
 
-.carnes {
-    width: 80%;
-}
-
-.frutas {
-    width: 55%;
+.fotos {
+    width: 50%;
+    height: 150px;
 }
 
 .t_categoria {
-    margin-left: 43%;
     font-family: 'Coustard';
     font-weight: 800;
     font-size: 1.5rem;
